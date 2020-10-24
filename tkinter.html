@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tkinter tutorial</title>
+	<style type="text/css">
+			ul {
+	list-style: none;
+	padding: 0;
+	margin:  0 0px ;
+}
+body {
+	 background-color: teal;
+	
+    
+}
+h1 b i{
+	font-size:80px;
+	color :black;
+	font-family: Verdana;
+
+}
+ 
+
+ul{
+	width: 100%;
+	height: 80px;
+	background-color: #0005;
+	line-height: 50px;
+			}
+ul{
+	float: right;
+	margin-right: 10px;
+	font-size: 15px;
+}
+		ul li { 
+			
+			list-style-type: none;
+			
+			display: inline-block;
+          
+		}
+	div{
+		float:left;
+		margin-left: 30px;
+	}   
+
+	    
+ul li a {
+	     text-decoration: none;
+	     color: #fff;
+	    padding: 30px;
+	    font-family: verdana;}
+ul li:hover {
+	       
+	         background-color: Teal;
+
+}
+	</style>
+
+</head>
+<body><nav>
+<center>
+		<ul> <b><li> <a href="smarttech.html"> Home </a> </li>   
+		      <li> <a href="tu.html">Tutorials</a> </li>
+			 <li> <a href="pr.html">Projects  </a> </li>
+			 <li> <a href="conn.html">Contact</a> </li>
+			 
+			 </b>
+			</ul></nav>
+		</center><br><br><br><br><br><br><br>
+		<center><h1><b><i> Python - GUI Programming (Tkinter)</i></b></h1></center>
+		<h3>Python provides various options for developing graphical user interfaces (GUIs). Most important are listed below.<br>
+
+Tkinter − Tkinter is the Python interface to the Tk GUI toolkit shipped with Python. We would look this option in this chapter.<br>
+
+wxPython − This is an open-source Python interface for wxWindows http://wxpython.org.<br>
+
+JPython − JPython is a Python port for Java which gives Python scripts seamless access to Java class libraries on the local machine http://www.jython.org.<br>
+
+There are many other interfaces available, which you can find them on the net.<br>
+
+<h2>Tkinter Programming</h2><br>
+Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications. Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit.<br>
+
+<h2>Creating a GUI application using Tkinter is an easy task. All you need to do is perform the following steps −</h2><br>
+
+Import the Tkinter module.<br>
+
+Create the GUI application main window.<br>
+
+Add one or more of the above-mentioned widgets to the GUI application.<br>
+
+Enter the main event loop to take action against each event triggered by the user.<br>
+
+<h2>Example</h2><br>
+ 
+
+import Tkinter<br>
+top = Tkinter.Tk()<br>
+# Code to add widgets will go here...<br>
+top.mainloop()<br>
+This would create a following window −</h3><br>
+<img src="win.jpg"width="200"height="200"><br>
+<h2>1	Button- 
+The Button widget is used to display buttons in your application.<br>
+
+2	Canvas-
+The Canvas widget is used to draw shapes, such as lines, ovals, polygons and rectangles, in your application.<br>
+
+3	Checkbutton-
+The Checkbutton widget is used to display a number of options as checkboxes. The user can select multiple options at a time.<br>
+
+4	Entry-
+The Entry widget is used to display a single-line text field for accepting values from a user.<br>
+
+5	Frame-
+The Frame widget is used as a container widget to organize other widgets.<br>
+
+6	Label-
+The Label widget is used to provide a single-line caption for other widgets. It can also contain images.<br>
+
+7	Listbox-
+The Listbox widget is used to provide a list of options to a user.<br>
+
+8	Menubutton-
+The Menubutton widget is used to display menus in your application.<br>
+
+9	Menu-
+The Menu widget is used to provide various commands to a user. These commands are contained inside Menubutton.<br>
+
+10	Message-
+The Message widget is used to display multiline text fields for accepting values from a user.<br>
+
+11	Radiobutton-
+The Radiobutton widget is used to display a number of options as radio buttons. The user can select only one option at a time.<br>
+
+12	Scale-
+The Scale widget is used to provide a slider widget.<br>
+
+13	Scrollbar-
+The Scrollbar widget is used to add scrolling capability to various widgets, such as list boxes.<br>
+
+14	Text-
+The Text widget is used to display text in multiple lines.<br>
+
+15	Toplevel-
+The Toplevel widget is used to provide a separate window container.<br>
+
+16	Spinbox-
+The Spinbox widget is a variant of the standard Tkinter Entry widget, which can be used to select from a fixed number of values.<br>
+
+17	PanedWindow-
+A PanedWindow is a container widget that may contain any number of panes, arranged horizontally or vertically.<br>
+
+18	LabelFrame-
+A labelframe is a simple container widget. Its primary purpose is to act as a spacer or container for complex window layouts.<br>
+
+19	tkMessageBox-
+This module is used to display message boxes in your applications.<br></h2>
+
+<h2>Let us study these widgets in detail −</h2><br>
+
+<h3>Standard attributes<br>
+Let us take a look at how some of their common attributes.such as sizes, colors and fonts are specified.<br>
+
+Dimensions<br>
+
+Colors<br>
+
+Fonts<br>
+
+Anchors<br>
+
+Relief styles<br>
+
+Bitmaps<br>
+
+Cursors<br>
+
+<h2>Let us study them briefly −</h2><br>
+
+Geometry Management<br>
+All Tkinter widgets have access to specific geometry management methods, which have the purpose of organizing widgets throughout the parent widget area. Tkinter exposes the following geometry manager classes: pack, grid, and place.<br>
+
+The pack() Method − This geometry manager organizes widgets in blocks before placing them in the parent widget.<br>
+
+The grid() Method − This geometry manager organizes widgets in a table-like structure in the parent widget.<br>
+
+The place() Method − This geometry manager organizes widgets by placing them in a specific position in the parent widget.</h3><br>
+<h2>Tk/Tcl has long been an integral part of Python. It provides a robust and platform independent windowing toolkit, that is available to Python programmers using the tkinter package, and its extension, the tkinter.tix and the tkinter.ttk modules.<br>
+
+The tkinter package is a thin object-oriented layer on top of Tcl/Tk. To use tkinter, you don’t need to write Tcl code, but you will need to consult the Tk documentation, and occasionally the Tcl documentation. tkinter is a set of wrappers that implement the Tk widgets as Python classes. In addition, the internal module _tkinter provides a threadsafe mechanism which allows Python and Tcl to interact.<br>
+
+tkinter’s chief virtues are that it is fast, and that it usually comes bundled with Python. Although its standard documentation is weak, good material is available, which includes: references, tutorials, a book and others. tkinter is also famous for having an outdated look and feel, which has been vastly improved in Tk 8.5. Nevertheless, there are many other GUI libraries that you could be interested in. For more information about alternatives, see the Other Graphical User Interface Packages section.<br>
+
+<h1>DOCUMENTATION</h1>
+<H2><li> <a href="https://docs.python.org/3/library/tk.html">CLICK HERE FOR TK DOCUMENTATION</a> </li></H2>
+
+
+</h2>
+		 
+</body>
+</html>
+		
