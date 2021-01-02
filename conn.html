@@ -1,191 +1,264 @@
- <!DOCTYPE html>
-<html>
-	<head>
-		<title>smart_tech</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<style type="text/css">
-		* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro', sans-serif;
-}
+   <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>smarttech</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 	<style type="text/css">
 
-.icon-bar {
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	z-index: 10;
+ 		body {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	position: relative;
+	margin-top: 100px;
+}
+.container img {
+	display: block;
+	width: 100%;
 }
 body {
-	background: url(contact.jpg);background-size:100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+	 background-color: white;
 	
     
 }
-
-a {
-	text-decoration: none;
-	width: 210px;
-	background: #3b5999;
-	color: #fff;
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color:#0005;
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
-	padding: 5px;
-	font-size: 20px;
-	transform: translateX(-170px);
-	-webkit-transform: translateX(-170px);
-	-ms-transform: translateX(-170px);
-	transition: all 0.5s linear;
-	-webkit-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
+	font-size: 24px;
+	color: #fff;
 }
-
-.facebook {
-	background:  #e4405f;
-}
-.twitter {
-	background:  #e4405f;
-}
-
-.instagram {
-	background: #e4405f;
-}
-
-.youtube {
-	background: #cd201f;
-}
-
-.linkedin {
-	background: #e4405f;
-}
-
-
-a i {
-	padding-left: 20px;
-	font-size: 30px !important;
-	animation: letszoom 3s linear alternate-reverse infinite;
-}
-
-@keyframes letszoom {
-	from {
-		transform: scale(0.8);
-	}
-
-	to {
-		transform: scale(1);
-	}
-
-}
-h1 b i{
-	font-size:105px;
-	color :blue;
-	font-family:verdana;
-	 
-}
-h2 {
-	font-size:20px; 
-	color:white;
-	font-family:verdana;
-
-	 
-}
-h1{
-	font-family:Algerian;
-	font-size: 40px;
-}
- ul{
-	width: 100%;
-	height: 80px;
-	background-color: #0005;
-	line-height: 50px;
-			}
-ul{
+nav .links {
 	float: right;
-	margin-right: 10px;
-	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-		ul li { 
-			
-			list-style-type: none;
-			
-			display: inline-block;
-          
-		}
-	div{
-		float:left;
-		margin-left: 30px;
-	}   
-
-	    
-ul li a {
-	     text-decoration: none;
-	     color: #fff;
-	    padding: 30px;
-	    font-family: verdana;}
-
-ul li:hover {
-	       
-	       
-	         
-}	    
-
-div a:hover {
-	  transform: translateX(0);
-	 -webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
+nav .links li {
+	list-style: none;
 }
-</style>
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+ ul li  a:hover {
+	 color:#3b5998;
+	
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+img{
+	width: 40%
+}
+ 
+	 
+
+  
+
+@media screen and (max-width: 568px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	h1 b i{
+		font-size: 40px;
+	}
+	img{
+		width: 100%;
+  height: auto;
+	}
+	 
+
+}
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.centerdiv{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.centerdiv a{
+	height: 100px;
+	width: 100px;
+	background-color: #f5f6fa;
+	border-radius: 80px;
+	text-align: center;
+	margin: 10px;
+	line-height: 110px;
+	box-shadow: 1px 4px 2px 2px;
+
+
+}
+
+.centerdiv a { 
+	transition: all 0.35 linear;
+
+
+}
+.centerdiv a{
+	size: 50px;
+}
+.centerdiv a: hower i{
+	transform: scale(1.5);
+}
+.fa-instagram{
+	color:#e84393;
+}
+.fa-youtube{
+	color: #e84118
+}
+
+.centerdiv{
+
+}
+h2{
+	background-color:#3b5998;
+	color: white;
+}
 
 
 
-		
-	</head>
-	<body>
-		<div class="icon-bar">
-			 
-			
-			<a href='https://instagram.com/smart__tech_?igshid=9w8k1tp107lv' class='instagram' target='_blank'>
-				click here to visit<i class="fab fa-instagram"></i>
-			</a>
-			<a href='' class='email' target='_blank'>
-				click here to visit<i class="fab fa-envelope"></i>
-			</a>
-			<a href='https://www.youtube.com/channel/UCzctoNqKhrR4P5jxWO9JZQw' class='youtube' target='_blank'>
-			click here to visit<i class=" fab fa-youtube-square"></i></a>
-			</div><br> 
+ 
 
-			<nav>
-<center>
-		<ul> <b><li> <a href="index.html"> Home </a> </li>   
-		      <li> <a href="tu.html">Tutorials</a> </li>
-			 <li> <a href="pr.html">Projects  </a> </li>
-			 <li> <a href="conn.html">Contact</a> </li>
-			<br><br>
-			<h3><marquee>THANKS FOR VISITING </marquee></h3>
+ 
 
-			<br><BR>
-			<h1><center>CONTACT US</center></h1><BR>
-			<h2><center>DM me for any question and inquerys.<br>We would be happy to answer your question and set up a meeting with you.Smart tech can help set you apart from flock!</center></h2>
+ 		
 
 
-			  
-			
-			
-			 
+ 	</style>
 
-			 </b>
-			</ul></nav>
-		</center>
+
+
+
+
+ </head>
+ <body>
+ 	  
+ 	<nav>
+	<input id="nav-toggle" type="checkbox">
+	<div class="logo">SMART<strong>TECH</strong></div>
+	<ul class="links">
+		<li><a href="smarttech.html">Home</a></li>
+		<li><a href="about.html">AboutUs</a></li>
+		<li><a href="tu.html">Tutorials</a></li>
+		<li><a href="pr.html">Projects</a></li>
+		<li><a href="conn.html">Contact</a></li>
+	</ul>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</label>
+</nav>
+<br><br><br><br><br><br><br><br> 
+<center><h1>We would love to hear it from you</h1>
+<h2>Any feedback positive or negative will help us improve our blog . Please do write to us and guide us on how we are doing and how we can do things better. Any and every suggestion is welcome, Want to learn a course that we don’t offer or a certain topic was difficult to understand all suggestions are welcome. 
+
+
+
+
+<center><img src="smarttechpic.jpg"><br><br></h2></center> 
+
+<b>Here is my Youtube and Instagram  channel link  :) </b>
 		 
+		<div class="centerdiv">
+			 <a href='https://www.youtube.com/channel/UCzctoNqKhrR4P5jxWO9JZQw' class='youtube' target='_blank'>
+			 <i class=" fab fa-youtube-square"></i></a>
+			<a href='https://instagram.com/smart__tech_?igshid=9w8k1tp107lv' class='instagram' target='_blank'>
+				  <i class="fab fa-instagram"></i>
+		</div>
 
-		
-		
-	</body>
-</html>
+	 
+	   
+</div>
+ 
+ 
+ 
+	
+
+ 
+ 
+ </body>
+ </html>
