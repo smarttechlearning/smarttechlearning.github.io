@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html>
  <head>
  	<title>smarttech</title>
@@ -19,10 +19,7 @@
 	width: 100%;
 }
 body {
-	background: url(ho.jpg);background-size:100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+	 background-color: white;
 	
     
 }
@@ -90,19 +87,12 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-h1 b i{
-	font-size:105px;
-	color :#3b5998;
-	font-family:verdana;
-	 
+img{
+	width: 40%
 }
-h2 {
-	font-size:60px; 
-	color:white;
-	font-family:verdana;
+ 
+	 
 
-	 
-}
   
 
 @media screen and (max-width: 568px) {
@@ -150,9 +140,11 @@ h2 {
 	h1 b i{
 		font-size: 40px;
 	}
-	h2{
-		font-size: 30px;
+	img{
+		width: 100%;
+  height: auto;
 	}
+	 
 
 }
 *{
@@ -198,56 +190,17 @@ h2 {
 	color: #e84118
 }
 
+.centerdiv{
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 0px solid #3498db;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  background:#3b5998;
+}
+h2{
+	background-color:#3b5998;
+	color: white;
 }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
+ 
 
  
 
@@ -261,10 +214,8 @@ h2 {
 
 
  </head>
- <body onload="myFunction()" style="margin:0;">
- 	<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
+ <body>
+ 	  
  	<nav>
 	<input id="nav-toggle" type="checkbox">
 	<div class="logo">SMART<strong>TECH</strong></div>
@@ -281,9 +232,19 @@ h2 {
 		<div class="line"></div>
 	</label>
 </nav>
-<br><br><br><br><br><br>
-		<center><h1><b><i>WELCOME TO</i></b></h1></center>
-		<center><h2><b><i>SMART TECH</i></b></h2></center>
+<br><br><br><br><br><br><br><br> 
+
+
+
+<center><h2>SmartTech website is all about creativity and innovative work in the field of Technology.
+We provide programming language videos, web development videos,app development videos and technology videos. 
+You will get all of my youtube videos source code and you are free to use it and make changes.
+
+Please give us your valuable feedback and suggestions. We appreciate your opinions and will use it to evaluate changes and make improvements on our blog.<br>
+<img src="smarttechpic.jpg"><br><br></h2></center> 
+
+<b>Here is my Youtube and Instagram  channel link  :) </b>
+		 
 		<div class="centerdiv">
 			 <a href='https://www.youtube.com/channel/UCzctoNqKhrR4P5jxWO9JZQw' class='youtube' target='_blank'>
 			 <i class=" fab fa-youtube-square"></i></a>
@@ -294,18 +255,7 @@ h2 {
 	 
 	   
 </div>
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
+ 
  
  
 	
